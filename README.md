@@ -26,7 +26,7 @@ Parameters: Initial Mass: 3500 kg | Empty Mass: 100 kg | Max Thrust: 60000 N
 
 ![Trajectory Plot](/img/Trajectory_Comparison_and_Engine_Activity_Comparison.png)
 
-* **Trajectory:** Blue tracks an optimal descent; Red shows the rocket fighting crosswinds to prevent drift.
+* **Trajectory:** The blue line represents the optimal orbital and descent path, while the red line shows the orbital and descent path affected by crosswinds when the rocket is on Earth.
 * **Throttle:** Both profiles show identical saturation at 100% thrust. This confirms the guidance logic relies on Thrust Vectoring (Pitch) rather than throttle modulation to compensate for wind disturbances.
 * **Insight:** The system prioritizes maximum deceleration for fuel efficiency, using the engine's gimbal angle, not power, to stabilize the landing.
 
