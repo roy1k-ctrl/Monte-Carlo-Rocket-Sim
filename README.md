@@ -3,7 +3,7 @@ Python-based vertical landing simulation for a reusable rocket, featuring PID co
 ## Simulation Results
 Here is the comparison between the most efficient landing (Green) and the least efficient survivor (Red) from 100 Monte Carlo runs.
 
-![Trajectory Plot](Trajectory_Comparison_and_Engine_Activity_Comparison.png)
+![Trajectory Plot](/img/Trajectory_Comparison_and_Engine_Activity_Comparison.png)
 
 ### Efficiency Distribution
-![Histogram](Fuel_Efficiency.png)
+![Histogram](/img/Fuel_Efficiency.png)
