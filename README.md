@@ -27,6 +27,8 @@ The plot below compares the most efficient landing (Blue) against the least effi
 ### 2. Fuel Efficiency Distribution
 A histogram showing the remaining fuel across all successful landings. This helps determine the optimal "Safety Margin" for fuel loading.
 
+Parameters: Initial Mass: 3500 kg | Empty Mass: 100 kg | Max Thrust: 60000 N
+
 ![Histogram](/img/Fuel_Efficiency.png)
 
 ## Technical Details
