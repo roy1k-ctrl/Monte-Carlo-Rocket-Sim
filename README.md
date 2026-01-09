@@ -22,12 +22,12 @@ The simulation runs 100 flights to generate a success rate and fuel efficiency d
 ### 1. Trajectory Analysis (Best vs. Worst Case)
 The plot below compares the most efficient landing (Blue) against the least efficient (Red) that experienced heavy wind and sensor noise.
 
+Parameters: Initial Mass: 3500 kg | Empty Mass: 100 kg | Max Thrust: 60000 N
+
 ![Trajectory Plot](/img/Trajectory_Comparison_and_Engine_Activity_Comparison.png)
 
 ### 2. Fuel Efficiency Distribution
 A histogram showing the remaining fuel across all successful landings. This helps determine the optimal "Safety Margin" for fuel loading.
-
-Parameters: Initial Mass: 3500 kg | Empty Mass: 100 kg | Max Thrust: 60000 N
 
 ![Histogram](/img/Fuel_Efficiency.png)
 
