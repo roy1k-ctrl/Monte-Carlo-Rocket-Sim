@@ -26,8 +26,8 @@ Parameters: Initial Mass: 3500 kg | Empty Mass: 100 kg | Max Thrust: 60000 N
 
 ![Trajectory Plot](/img/Trajectory_Comparison_and_Engine_Activity_Comparison.png)
 
-* **Green Line (Best Case):** Represents a flight with minimal external disturbances. The controller maintains a smooth, near-optimal descent profile, requiring minimal thrust vectoring.
-* **Red Line (Worst Case):** Represents a flight battling heavy crosswinds and sensor noise. The jagged trajectory and throttle spikes indicate the PD controller actively fighting to maintain stability and cancel horizontal drift.
+* **Blue Line (Best Case):** Represents a flight with minimal external disturbances. The controller maintains a smooth, near-optimal descent profile, requiring minimal thrust vectoring.
+* **Red Line (Worst Case):** Represents a flight experiencing heavy crosswinds and sensor noise. The jagged trajectory and throttle spikes indicate the PD controller actively fighting to maintain stability and cancel horizontal drift.
 * **Engineering Insight:** Despite the extreme disturbances in the red trajectory, the controller successfully achieved a soft landing ($v_y > -5$ m/s), validating the stability margins of the PID gains.
 
 ### 2. Fuel Efficiency Distribution
