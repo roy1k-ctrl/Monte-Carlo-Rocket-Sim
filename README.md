@@ -26,18 +26,18 @@ Parameters: Initial Mass: 3500 kg | Empty Mass: 100 kg | Max Thrust: 60000 N
 
 ![Trajectory Plot](/img/Trajectory_Comparison_and_Engine_Activity_Comparison.png)
 
-* Trajectory: Blue tracks an optimal descent; Red shows the rocket fighting crosswinds to prevent drift.
-* Throttle: Both profiles show identical saturation at 100% thrust. This confirms the guidance logic relies on Thrust Vectoring (Pitch) rather than throttle modulation to compensate for wind disturbances.
-* Insight: The system prioritizes maximum deceleration for fuel efficiency, using the engine's gimbal angle, not power, to stabilize the landing.
+* **Trajectory:** Blue tracks an optimal descent; Red shows the rocket fighting crosswinds to prevent drift.
+* **Throttle:** Both profiles show identical saturation at 100% thrust. This confirms the guidance logic relies on Thrust Vectoring (Pitch) rather than throttle modulation to compensate for wind disturbances.
+* **Insight:** The system prioritizes maximum deceleration for fuel efficiency, using the engine's gimbal angle, not power, to stabilize the landing.
 
 ### 2. Fuel Efficiency Distribution
 A histogram showing the remaining fuel across all successful landings. This helps determine the optimal "Safety Margin" for fuel loading.
 
 ![Histogram](/img/Fuel_Efficiency.png)
 
-* Average Fuel Remaining: Indicates the nominal performance of the system.
-* The Shape of Distribution: The distribution skews left, showing that a subset of high-stress flights requires significantly more propellant.
-* Design Conclusion: The long-tail distribution highlights the extra fuel required to compensate for high-wind scenarios. This data can be used to precisely calculate the required fuel safety margin to ensure a successful landing without carrying unnecessary dead weight.
+* **Average Fuel Remaining:** Indicates the nominal performance of the system.
+* **The Shape of Distribution:** The distribution skews left, showing that a subset of high-stress flights requires significantly more propellant.
+* **Design Conclusion:** The long-tail distribution highlights the extra fuel required to compensate for high-wind scenarios. This data can be used to precisely calculate the required fuel safety margin to ensure a successful landing without carrying unnecessary dead weight.
 
 ## Technical Details
 
