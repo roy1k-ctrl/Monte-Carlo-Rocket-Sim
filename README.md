@@ -37,36 +37,3 @@ A histogram showing the remaining fuel across all successful landings. This help
 * **Controller:** PID (Proportional-Integral-Derivative) Logic
     * Throttle Control: Maintains constant descent velocity near the surface.
     * Vector Control: Tilts the rocket to cancel horizontal drift caused by wind.
-
-## How to Run
-
-1.  **Clone the repository**
-    ```bash
-    git clone [https://github.com/roy1k-ctrl/Monte-Carlo-Rocket-Sim.git](https://github.com/roy1k-ctrl/Monte-Carlo-Rocket-Sim.git)
-    cd Monte-Carlo-Rocket-Sim
-    ```
-
-2.  **Install dependencies**
-    ```bash
-    pip install numpy matplotlib
-    ```
-
-3.  **Run the simulation**
-    ```bash
-    python rocket_sim.py
-    ```
-
-4.  **Input Parameters**
-    When prompted, enter your rocket design parameters. Example:
-    * **Max Mass:** `3500` (kg)
-    * **Empty Mass:** `100` (kg)
-    * **Max Thrust:** `60000` (N)
-
-## Future Improvements
-
-* Implement RK4 (Runge-Kutta) integration for higher physics precision.
-* Add a visual animation of the landing sequence.
-* Expand to 3D simulation to account for cross-range drift.
-
----
-*Created by Hyunmin Kim - Winter 2026*
