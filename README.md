@@ -20,7 +20,7 @@ The simulation includes:
 The simulation runs 100 flights to generate a success rate and fuel efficiency distribution.
 
 ### 1. Trajectory Analysis (Best vs. Worst Case)
-The plot below compares the most efficient landing (Green) against the least efficient "survivor" (Red) that battled heavy wind and sensor noise.
+The plot below compares the most efficient landing (Blue) against the least efficient (Red) that experienced heavy wind and sensor noise.
 
 ![Trajectory Plot](/img/Trajectory_Comparison_and_Engine_Activity_Comparison.png)
 
