@@ -2,7 +2,7 @@
 
 A Python-based 2D physics simulation that verifies a vertical landing GNC (Guidance, Navigation, and Control) algorithm using Monte Carlo methods.
 
-This tool simulates 100+ flights with randomized wind gusts, sensor noise, and mass variations to test the robustness of a PID controller for a reusable rocket booster.
+This tool simulates 100 flights with randomized wind gusts, sensor noise, and mass variations to test the robustness of a PID controller for a reusable rocket booster.
 
 ## Project Overview
 
