@@ -24,13 +24,10 @@ The plot below compares the most efficient landing (Green) against the least eff
 
 ![Trajectory Plot](/img/Trajectory_Comparison_and_Engine_Activity_Comparison.png)
 
-*(Note: Upload your 'best_vs_worst.png' file to the repo for this image to appear)*
-
 ### 2. Fuel Efficiency Distribution
 A histogram showing the remaining fuel across all successful landings. This helps determine the optimal "Safety Margin" for fuel loading.
 
 ![Histogram](/img/Fuel_Efficiency.png)
-*(Note: Upload your 'efficiency_histogram.png' file to the repo for this image to appear)*
 
 ## Technical Details
 
