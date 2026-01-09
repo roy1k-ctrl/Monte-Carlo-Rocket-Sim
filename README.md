@@ -1,9 +1,75 @@
-# Monte-Carlo-Rocket-Sim
-Python-based vertical landing simulation for a reusable rocket, featuring PID control and Monte Carlo robustness analysis.
+# Monte Carlo Rocket Landing Simulation
+
+A Python-based 2D physics simulation that verifies a vertical landing GNC (Guidance, Navigation, and Control) algorithm using Monte Carlo methods.
+
+This tool simulates 100+ flights with randomized wind gusts, sensor noise, and mass variations to test the robustness of a PID controller for a reusable rocket booster.
+
+## Project Overview
+
+The goal of this project was to design a control system capable of landing a reusable rocket (similar to SpaceX's Falcon 9) and strictly verify its reliability under realistic uncertainty.
+
+The simulation includes:
+* **Physics Engine:** Custom 2D Equations of Motion (EOM) including variable gravity, atmospheric drag, and thrust vectoring.
+* **GNC Logic:**
+    * **Guidance:** Keplerian orbit prediction to trigger deorbit burns.
+    * **Control:** A Proportional-Derivative (PD) controller regulating throttle and thrust angle.
+* **Monte Carlo Analysis:** Statistical verification of the safety margin by running hundreds of scenarios with random error injection.
+
 ## Simulation Results
-Here is the comparison between the most efficient landing (Green) and the least efficient survivor (Red) from 100 Monte Carlo runs.
+
+The simulation runs 100 flights to generate a success rate and fuel efficiency distribution.
+
+### 1. Trajectory Analysis (Best vs. Worst Case)
+The plot below compares the most efficient landing (Green) against the least efficient "survivor" (Red) that battled heavy wind and sensor noise.
 
 ![Trajectory Plot](/img/Trajectory_Comparison_and_Engine_Activity_Comparison.png)
 
-### Efficiency Distribution
+*(Note: Upload your 'best_vs_worst.png' file to the repo for this image to appear)*
+
+### 2. Fuel Efficiency Distribution
+A histogram showing the remaining fuel across all successful landings. This helps determine the optimal "Safety Margin" for fuel loading.
+
 ![Histogram](/img/Fuel_Efficiency.png)
+*(Note: Upload your 'efficiency_histogram.png' file to the repo for this image to appear)*
+
+## Technical Details
+
+* **Language:** Python 3
+* **Libraries:** `numpy` (Physics/Math), `matplotlib` (Visualization)
+* **Integration:** Euler Method (Time step: 0.1s)
+* **Controller:** PID (Proportional-Integral-Derivative) Logic
+    * Throttle Control: Maintains constant descent velocity near the surface.
+    * Vector Control: Tilts the rocket to cancel horizontal drift caused by wind.
+
+## How to Run
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/roy1k-ctrl/Monte-Carlo-Rocket-Sim.git](https://github.com/roy1k-ctrl/Monte-Carlo-Rocket-Sim.git)
+    cd Monte-Carlo-Rocket-Sim
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    pip install numpy matplotlib
+    ```
+
+3.  **Run the simulation**
+    ```bash
+    python rocket_sim.py
+    ```
+
+4.  **Input Parameters**
+    When prompted, enter your rocket design parameters. Example:
+    * **Max Mass:** `3500` (kg)
+    * **Empty Mass:** `100` (kg)
+    * **Max Thrust:** `60000` (N)
+
+## Future Improvements
+
+* Implement RK4 (Runge-Kutta) integration for higher physics precision.
+* Add a visual animation of the landing sequence.
+* Expand to 3D simulation to account for cross-range drift.
+
+---
+*Created by Hyunmin Kim - Winter 2026*
