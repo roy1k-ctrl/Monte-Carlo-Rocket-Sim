@@ -9,10 +9,10 @@ Reported result: In a batch of 100 Monte Carlo trials, all 100 satisfied the pro
 The simulation models a nominal 3,500 kg launch vehicle with two-dimensional motion, variable gravity, atmospheric drag, thrust-vector direction, and propellant consumption. It advances the vehicle state with forward-Euler integration and evaluates guidance and control decisions at 10 Hz.
 
 The simulated mission consists of:
-* **Launch and ascent:** Apply full throttle during the launch burn.
-* **Orbital flight:** Estimate orbital properties using Keplerian relationships, including orbital energy and predicted apoapsis.
-* **Deorbit:** Use orbital-state prediction and apoapsis targeting in the logic for triggering the deorbit burn, with full throttle during the active burn.
-* **Powered descent:** 1. Adjust thrust direction for lateral-velocity correction and throttle for vertical descent control using simulated velocity measurements.
+1. Launch and ascent: Apply full throttle during the launch burn.
+2. Orbital flight: Estimate orbital properties using Keplerian relationships, including orbital energy and predicted apoapsis.
+3. Deorbit: Use orbital-state prediction and apoapsis targeting in the logic for triggering the deorbit burn, with full throttle during the active burn.
+4. Powered descent: Adjust thrust direction for lateral-velocity correction and throttle for vertical descent control using simulated velocity measurements.
 
 The descent controller uses rule-based guidance and proportional vertical-velocity feedback; it is not a full PID or PD controller.
 
