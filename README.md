@@ -105,7 +105,7 @@ Launch Jupyter Notebook:
 
 `jupyter notebook`
 
-Open `monte_carlo.ipynb` and select **Run All Cells**.
+Open `monte_carlo.ipynb` and select Run All Cells.
 
 When prompted, enter the following parameters:
 
