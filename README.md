@@ -121,10 +121,10 @@ The program will execute 100 Monte Carlo simulations with randomized initial con
 
 After completing the simulations, the notebook displays:
 
-- **Monte Carlo Summary:** Success rate, average remaining propellant, and best/worst flight propellant values.
-- **Trajectory and Engine Activity Comparison:** Altitude profiles and throttle histories for selected flights.
-- **Fuel Remaining Distribution:** Histogram of remaining propellant across successful trials.
-- **Landing Success Rate:** Bar chart showing the number of successful and failed trials according to the programmed terminal-state criteria.
+- Monte Carlo Summary: Success rate, average remaining propellant, and best/worst flight propellant values.
+- Trajectory and Engine Activity Comparison: Altitude profiles and throttle histories for selected flights.
+- Fuel Remaining Distribution: Histogram of remaining propellant across successful trials.
+- Landing Success Rate: Bar chart showing the number of successful and failed trials according to the programmed terminal-state criteria.
 
 **Note:** Results may vary between executions because the simulation uses random sampling without a fixed random seed. The reported success rate reflects the modeled conditions and programmed terminal-state criteria, not independently validated physical touchdown reliability.
 
