@@ -76,6 +76,58 @@ This 100% simulated pass rate describes only the sampled test cases and defined 
 | Descent control | Rule-based thrust-direction control and proportional vertical-velocity feedback |
 | Test batch | 100 Monte Carlo runs |
 
+## How to Run
+
+### 1. Requirements
+
+- Python 3.12 or later
+- Jupyter Notebook or JupyterLab
+- NumPy
+- Matplotlib
+
+Install the required packages using:
+
+`pip install numpy matplotlib notebook`
+
+### 2. Download the Repository
+
+Clone the repository using Git:
+
+`git clone https://github.com/roy1k-ctrl/Monte-Carlo-Rocket-Sim.git`
+
+Navigate to the project directory:
+
+`cd Monte-Carlo-Rocket-Sim`
+
+### 3. Run the Simulation
+
+Launch Jupyter Notebook:
+
+`jupyter notebook`
+
+Open `monte_carlo.ipynb` and select **Run All Cells**.
+
+When prompted, enter the following parameters:
+
+| Parameter | Example Value |
+|---|---|
+| Maximum Mass | 3500 kg |
+| Minimum Mass (Dry Mass) | 100 kg |
+| Maximum Thrust | 60000 N |
+
+The program will execute 100 Monte Carlo simulations with randomized initial conditions and simulated sensor noise.
+
+### 4. Review the Results
+
+After completing the simulations, the notebook displays:
+
+- **Monte Carlo Summary:** Success rate, average remaining propellant, and best/worst flight propellant values.
+- **Trajectory and Engine Activity Comparison:** Altitude profiles and throttle histories for selected flights.
+- **Fuel Remaining Distribution:** Histogram of remaining propellant across successful trials.
+- **Landing Success Rate:** Bar chart showing the number of successful and failed trials according to the programmed terminal-state criteria.
+
+**Note:** Results may vary between executions because the simulation uses random sampling without a fixed random seed. The reported success rate reflects the modeled conditions and programmed terminal-state criteria, not independently validated physical touchdown reliability.
+
 ## Scope and Limitations
 This project is a simplified software simulation, intended to explore guidance, control, and repeatable test automation. Its present scope does not establish flight readiness or robustness to disturbances that were not modeled. In particular:
 * The Monte Carlo inputs cover initial horizontal velocity, mass perturbations, and vertical-velocity measurement noise—not an explicit random wind-shear model.
