@@ -52,6 +52,14 @@ The model applies full throttle during launch and deorbit burns. During powered 
 
 The remaining-propellant histogram illustrates variation across the simulated runs and provides a starting point for evaluating propellant margins. It does not, on its own, establish an optimal fuel load or validated safety margin.
 
+### 3. Monte Carlo Landing Success Rate
+
+![Landing Success Rate](img/Monte_Carlo_Landing_Success_Rate.png)
+
+The success-rate chart from the engineering portfolio summarizes the 100-trial Monte Carlo test batch: 100 trials met the programmed terminal-state criteria and 0 were classified as failures. These checks require vertical velocity greater than −5 m/s, absolute horizontal velocity below 2 m/s, and propellant remaining at the final state.
+
+This 100% simulated pass rate describes only the sampled test cases and defined criteria; it does not establish a 100% probability of safe physical touchdown or performance under untested disturbances. The chart above is reproduced from the engineering portfolio.
+
 ## Technical Details
 
 | Component | Implementation |
