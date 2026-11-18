@@ -54,17 +54,19 @@ The remaining-propellant histogram illustrates variation across the simulated ru
 
 ## Technical Details
 
-* **Language:** Python 3
-* **Libraries:** `numpy` (Physics/Math), `matplotlib` (Visualization)
-* **Motion model:** Two-dimensional equations of motion with variable gravity, atmospheric drag, thrust, and changing mass
-* **Numerical Integration:** Forward Euler
-* **Integration timestep / control interval:** 0.1 s / 10 Hz
-* **Nominal initial mass:** 3,500 kg
-* **Dry Mass:** 100 kg
-* **Maximum thrust:** 60,000 N
-* **Guidance:** Keplerian orbital calculations and phase-dependent burn logic
-* **Descent control:** Rule-based thrust-direction control and proportional vertical-velocity feedback
-* **Test batch:** 100 Monte Carlo runs
+| Component | Implementation |
+| --- | --- |
+| Language | Python 3 |
+| Libraries | NumPy, Matplotlib |
+| Motion model | Two-dimensional equations of motion with variable gravity, atmospheric drag, thrust, and changing mass |
+| Numerical integration | Forward Euler |
+| Integration timestep / control interval | 0.1 s / 10 Hz |
+| Nominal initial mass | 3,500 kg |
+| Dry mass | 100 kg |
+| Maximum thrust | 60,000 N |
+| Guidance | Keplerian orbital calculations and phase-dependent burn logic |
+| Descent control | Rule-based thrust-direction control and proportional vertical-velocity feedback |
+| Test batch | 100 Monte Carlo runs |
 
 ## Scope and Limitations
 This project is a simplified software simulation, intended to explore guidance, control, and repeatable test automation. Its present scope does not establish flight readiness or robustness to disturbances that were not modeled. In particular:
